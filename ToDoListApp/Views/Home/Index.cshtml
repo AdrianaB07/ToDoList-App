@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "To-Do List";
+}
+
+
+<!-- Component pentru adăugarea unui task -->
+<div class="mb-4">
+    @await Component.InvokeAsync("AddTask")
+</div>
+
+<!-- Component pentru afișarea task-urilor -->
+<div>
+    @await Component.InvokeAsync("TaskList")
+</div>

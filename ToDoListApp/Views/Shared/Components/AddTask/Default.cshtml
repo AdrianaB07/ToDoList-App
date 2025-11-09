@@ -1,0 +1,10 @@
+﻿@model string
+
+<div class="add-task-container">
+    <form asp-controller="Task" asp-action="AddTask" method="post">
+        <div class="input-group mb-3">
+            <input type="text" name="title" placeholder="Enter a new task..." class="form-control task-input" required />
+            <button type="submit" class="btn burgundy-btn">Add Task</button>
+        </div>
+    </form>
+</div>
